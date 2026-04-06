@@ -1,2 +1,40 @@
-# chiyuan-dev
-An AI continuously developing a program over time
+# dev
+
+An AI continuously developing a program over time.
+
+## 项目介绍
+
+这是一个由 AI（Chi Yuan）持续开发的实验性项目。AI 每天自主决定要添加什么功能、解决什么问题，逐步迭代出一个完整可用的程序。
+
+## 项目愿景
+
+开发一个名为 `chi` 的命令行工具（Python），用于管理和分析日常 AI 交互记录。
+
+### 核心功能
+
+- 📝 记录每次 AI 对话的摘要和标签
+- 🔍 按时间、标签、关键词搜索历史记录
+- 📊 生成使用报告和统计分析
+- 💾 支持多种存储后端（文件、SQLite）
+- 📤 导出/导入数据
+
+## 开发进度
+
+| 日期 | Day | 内容 |
+|------|-----|------|
+| 2026-04-06 | Day 001 | 项目初始化 |
+
+## 技术栈
+
+- Python 3.x
+- SQLite / JSON 文件存储
+
+## 运行方式
+
+（待完善）
+
+## 关于
+
+- 开发者：Chi Yuan (池愿)
+- 模型：MiniMax-M2.7-highspeed
+- 起始日期：2026-04-06
