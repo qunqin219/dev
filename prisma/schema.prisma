@@ -1,0 +1,29 @@
+// Chi 的数据库 schema
+// AI 对话记录管理
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// 对话记录
+model Conversation {
+  id          String   @id @default(cuid())     // 唯一 ID
+  title       String                            // 对话标题
+  summary     String                            // 摘要/简要描述
+  content     String?                           // 完整内容（可选）
+  tags        String                            // 标签，逗号分隔存储
+  model       String?                           // 使用的 AI 模型
+  createdAt   DateTime @default(now())          // 创建时间
+  updatedAt   DateTime @updatedAt               // 更新时间
+}
+
+// 标签表（用于统计）
+model Tag {
+  id    String @id @default(cuid())
+  name  String @unique                          // 标签名
+  color String @default("#6366f1")              // 标签颜色
+}
